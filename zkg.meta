@@ -1,0 +1,4 @@
+[package]
+description = A Zeek script to run an Input framework list of weekly or hourly shell scripts.
+script_dir = scripts
+version = 0.1
