@@ -5,7 +5,7 @@ function hourly_scripts()
 	{
 	for ( script in hourly_shell_scripts_set )
     system(script);
-	schedule 1hr { hourly_scripts() };
+	schedule 1min { hourly_scripts() };
 	}
 
 function weekly_scripts()
