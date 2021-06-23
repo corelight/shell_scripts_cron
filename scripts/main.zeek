@@ -7,6 +7,6 @@ event hourly_scripts()
   schedule 1min { hourly_scripts() };
   }
 
-event network_time_init() {
+event zeek_init() {
   schedule 1min { hourly_scripts() };
 }
