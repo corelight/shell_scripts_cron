@@ -16,7 +16,7 @@ function weekly_scripts()
   }
 
 event network_time_init() &priority=5 {
-  schedule 1hr { hourly_scripts() };
+  schedule 1min { hourly_scripts() };
   schedule 7days { weekly_scripts() };
 }
 
