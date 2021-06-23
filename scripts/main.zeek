@@ -1,7 +1,7 @@
 module ShellScriptCron;
 
 
-function hourly_scripts()
+event hourly_scripts()
 	{
   system("suricata-update update -v");
   system("/root/input_files.sh");
@@ -9,7 +9,7 @@ function hourly_scripts()
 	schedule 1min { hourly_scripts() };
 	}
 
-function weekly_scripts()
+event weekly_scripts()
   {
   system("/root/geoip.sh");
   schedule 7days { weekly_scripts() };
